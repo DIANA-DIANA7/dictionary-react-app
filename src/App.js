@@ -5,11 +5,13 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="app-header">
         <h1>Dictionary Project</h1>
       </header>
-      <main><Dictionary /></main>
-      <footer className='app-footer'>Coded by Diana M. Open Source on GitHub, Hosted on Netlify</footer>
+
+      <main className="app-main"><Dictionary default="rain"/></main>
+      
+      <footer className="app-footer">Coded by Diana M. Open Source on GitHub, Hosted on Netlify</footer>
     </div>
   );
 }
