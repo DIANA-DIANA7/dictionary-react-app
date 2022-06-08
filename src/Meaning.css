@@ -1,0 +1,12 @@
+.meanings h3{
+    font-size: 1.25rem;
+    line-height:1.5;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.examples{
+    font-size: 0.95rem;
+    color:#70757a;
+    font-style: italic;
+}
