@@ -12,7 +12,7 @@ function App() {
 
       <main className="app-main"><Dictionary default="rain"/></main>
       
-      <footer className="app-footer">Open Source on <a href="https://github.com/DIANA-DIANA7/dictionary-react-app">GitHub</a> Hosted on Netlify</footer>
+      <footer className="app-footer">Open Source on <a href="https://github.com/DIANA-DIANA7/dictionary-react-app">GitHub</a></footer>
     </div>
   );
 }
