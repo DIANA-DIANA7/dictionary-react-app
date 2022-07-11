@@ -1,0 +1,33 @@
+.dictionary section{
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 1.5em;
+  margin: 1em; 
+}
+.dictionary label{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.dictionary input{
+  display: flex;
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 1.5em;
+  background: #7c7c7c2b;
+  color: white;
+  opacity: 0.7;
+  font-family: inherit;
+  width:100%;
+  margin:1em 0;
+  font-size: 120%;
+  border:1px solid #ddd;
+}
+ 
+
+.dictionary .hint{
+    margin-top: 0.25em;
+    font-size: 1rem;
+    opacity: 0.7;
+}

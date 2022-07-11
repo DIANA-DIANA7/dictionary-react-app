@@ -1,25 +1,53 @@
+
 .App {
-max-width: 800px;
-width:90%;
-background-color:#FFDDE8;
-margin: 2em auto
+  max-width: 800px;
+  width:90%;
+  margin: 2em auto;
+  font-size: 1rem;
+  font-family:'Comfortaa', cursive;
+  font-size: 120%;
+  background-color: #404040;
+  background-image: url("./media/background2.jpg");
+  background-blend-mode:exclusion;
+  background-position: center;
+  background-size: cover;
+  border-radius:1.5em;
 }
 
-.app-header {
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .app-header h1{
-  text-align: center;
-  background-color: #FC709B;
+  margin: 0;
   color:white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.app-footer{
+.app-header, .app-footer{
   text-align: center;
-  margin: 2em 0;
-  background-color: #FC709B;
+  padding:1em;
+  color:white;
+  text-shadow: 2px 2px 4px #000000;
+ 
 }
-a{color:white;}
 
+#icon{
+  color:#9670f4;
+  font-size:1em;
+  margin-right: 0.5em;
+}
+
+#code{  
+  border:1px solid #ddd;
+  text-decoration: none;
+  padding:0.5em 1em;
+  border-radius: 1.5em;
+  transition: all 150ms ease-in-out;
+  font-weight: bold;
+  font-size: 1rem;
+  color:#9670f4;
+  }
+
+#code:hover{
+  background-color: #9670f4;
+  color:white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}

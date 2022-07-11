@@ -1,8 +1,8 @@
-import React, { useState }  from "react";
+import React, {useState }  from "react";
 import axios from "axios";
-import "./Dictionary.css"
-import Results from "./Results";
-import Photos from "./Photos"
+import "../dictionary/Dictionary.css"
+import Results from "../results/Results";
+import Photos from "../photos/Photos";
 
 
 export default function Dictionary(props){
@@ -29,6 +29,7 @@ export default function Dictionary(props){
       const pexelsApiUrl =`https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
       const headers={Authorization: `Bearer ${pexelsApiKey}`} 
       axios.get(pexelsApiUrl,{headers:headers}).then(handlePexelsResponse);
+      
     }
 
     function handleSubmit(e){
@@ -50,10 +51,11 @@ export default function Dictionary(props){
         <div className="dictionary">
           <section>
             <form onSubmit={handleSubmit}>
-              <label for="search">What word do you want to look up?</label>
-              <input type="search" id="search" defaultValue={props.default} onChange={handleKeyword} />
+              <label htmlFor="search">What word do you want to look up?</label>
+              <input type="search" autoFocus id="search" defaultValue={props.default} onChange={handleKeyword} />
+             
             </form>
-            <div className="hint">suggested words: sunset, rain, flowers...</div>
+            <div className="hint">suggested words: Car, Sunset, Rain, Team...</div>
           </section>
           <Results results={result} />
           <Photos photos={photos} />
